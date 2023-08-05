@@ -7,8 +7,8 @@ import org.junit.jupiter.params.provider.CsvFileSource;
 
 public class CountOfRestTest {
     @ParameterizedTest
-    @CsvFileSource(files="src/test/resources/countofrest.csv")
-        void shouldCalculateCountOfRest(int expected,int income, int expenses, int threshold) {
+    @CsvFileSource(files = "src/test/resources/countofrest.csv")
+    void shouldCalculateCountOfRest(int expected, int income, int expenses, int threshold) {
         CountOfRest service = new CountOfRest();
 
         // вызываем целевой метод:
